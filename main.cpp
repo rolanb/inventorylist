@@ -1,5 +1,6 @@
 // Programmer: Rolan Belgrave
 // Program Purposes: This program will implement a linked list data structure that holds inventory items and allows user to display, add and remove items from the list.
+//User input transactions in the form of "type-id-decription-value" and program splits into an mutable array in order to process request.
 #include <iostream>
 #include <string>
 #include <vector>
@@ -8,7 +9,7 @@
 
 using namespace std;
 
-const string delimeter = "-"; // SWITCH TO " " NOTE: PROGRAM DOES NOT WORK WITH SPACE AS DELIMETER, IT MUST BE ANY OTHER CARRACTER LIKE COMMA, DASH, ETC.
+const string delimeter = "-"; //NOTE: PROGRAM DOES NOT WORK WITH SPACE AS DELIMETER, IT MUST BE ANY OTHER CARRACTER LIKE COMMA, DASH, ETC.
 
 vector<string> split(string, string); // Declaration of split function
 
@@ -40,10 +41,6 @@ int main() {
     cin >> transaction;
     
     input = split(transaction, delimeter); //Split transaction into vector to assess each element
-    
-    //for (int i = 0; i < input.size(); i++) { // INPUT CHECK FOR DEBUGGING
-     // cout << input[i] << endl;
-    //}
     
     // add item if user enters A
     if (input[0] == "A" || input[0] == "a"){
