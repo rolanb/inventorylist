@@ -1,6 +1,4 @@
-//CSC 331 = DATA STRUCTURES
-//PROGRAM #2
-// Rolan Belgrave
+// Programmer: Rolan Belgrave
 // Program Purposes: This program will implement a linked list data structure that holds inventory items and allows user to display, add and remove items from the list.
 #include <iostream>
 #include <string>
@@ -43,7 +41,7 @@ int main() {
     
     input = split(transaction, delimeter); //Split transaction into vector to assess each element
     
-    //for (int i = 0; i < input.size(); i++) { // INPUT CHECK FOR TESTING
+    //for (int i = 0; i < input.size(); i++) { // INPUT CHECK FOR DEBUGGING
      // cout << input[i] << endl;
     //}
     
